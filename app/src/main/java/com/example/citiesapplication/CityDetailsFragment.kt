@@ -21,7 +21,7 @@ class CityDetailsFragment : Fragment() {
     ): View? {
         binding= FragmentCityDetailsBinding.inflate(inflater,container,false)
 
-        val city = args.user
+        val city = args.city
 
         binding.ivCity.setImageResource(city.imageId)
         binding.tvName.text=city.title

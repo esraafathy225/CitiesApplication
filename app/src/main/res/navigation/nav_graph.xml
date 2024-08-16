@@ -16,7 +16,7 @@
         android:id="@+id/cityDetailsFragment"
         android:name="com.example.citiesapplication.CityDetailsFragment"
         android:label="CityDetailsFragment" >
-        <argument android:name="user"
+        <argument android:name="city"
             app:argType="com.example.navigationapp.City"></argument>
     </fragment>
     <fragment

@@ -30,11 +30,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.floatingActionButton.setOnClickListener {
 
-
             val intent = Intent(Intent.ACTION_SEND)
             intent.type = "text/plain"
+
             intent.putExtra(Intent.EXTRA_EMAIL, "esraa.fathy225@gmail.com")
             intent.putExtra(Intent.EXTRA_TEXT, "How are you?")
+
 
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
